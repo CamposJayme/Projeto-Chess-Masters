@@ -9,7 +9,7 @@
     --cor0: #012323;
     --cor1: #4A7371;
     --cor2: #7FA6A2;
-    --cor3: #C6D6D5;
+    --cor3: #c6d6d5b7;
     --cor4: #0F0E0C;
 
     --fonte-padrao: Arial, Helvetica, sans-serif;
@@ -17,6 +17,10 @@
 
 body {
     font-family: var(--fonte-padrao);
+    background-image: url(../imagens/background-chess.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 h1 {
@@ -25,10 +29,17 @@ h1 {
     padding: 12px;
 }
 
+
 header {
     background-color: var(--cor4);
     color: white;
     padding: 8px;
+}
+
+h2 {
+    background-color: var(--cor1);
+    border-radius: 5px;
+    padding: 5px;
 }
 
 h1, header {
@@ -44,6 +55,29 @@ h1, header {
 
 #supi, #dubov, #fischer {
     padding: 20px;
+    margin-left: 100px;
+    width: 960px;
+}
+
+.conteudo {
+    display: table;
+    background-color: var(--cor3);
+    padding: 14px;
+    border-radius: 5px;
+}
+
+.imagem {
+    display: table-cell;
+    float: right;
+}
+
+.texto {
+    display: table-cell;
+    float: left;
+    width: 650px;
+    margin-top: 10px;
+    margin-right: 20px;
+    text-align: justify;
 }
 
 aside {
