@@ -1,10 +1,13 @@
 @charset "UTF-8";
 
+
+/*Configuração global*/
 * {
     margin: 0;
     padding: 0;
 }
 
+/*Variáveis*/
 :root {
     --cor0: #012323;
     --cor1: #4A7371;
@@ -15,6 +18,7 @@
     --fonte-padrao: Arial, Helvetica, sans-serif;
 }
 
+/*Corpo*/
 body {
     font-family: var(--fonte-padrao);
     background-image: url(../imagens/background-chess.jpg);
@@ -23,13 +27,14 @@ body {
     background-size: cover;
 }
 
+/*Estilo para título nível 1*/
 h1 {
     background-color: var(--cor4);
     color: white;
     padding: 12px;
 }
 
-
+/*Cabeçalho*/
 header {
     background-color: var(--cor4);
     color: white;
@@ -37,17 +42,20 @@ header {
     margin: auto; 
 }
 
+/*Estilo para título nível 2*/
 h2 {
     background-color: var(--cor1);
     border-radius: 5px;
     padding: 5px;
 }
 
+/*Centralização dos itens dentro título de nível e cabeçalho*/
 h1, header {
     text-align: center;
     margin: auto;
 }
 
+/*Configuração de posição e dimensão das bandeiras*/
 #brasil, #russia, #eua {
     height: 30px;
     width: 30px;
@@ -55,12 +63,14 @@ h1, header {
     margin-left: 5px;
 }
 
+/*Configuração das sections onde cada uma contém um conteúdo*/
 #supi, #dubov, #fischer {
     padding: 20px;
     margin-left: 100px;
     width: 960px;
 }
 
+/*Estilo do conteúdo dentro das sections*/
 .conteudo {
     display: table;
     background-color: var(--cor3);
@@ -68,11 +78,13 @@ h1, header {
     border-radius: 5px;
 }
 
+/*Posicionamento das imagens a direita do texto*/
 .imagem {
     display: table-cell;
     float: right;
 }
 
+/*Configuração do texto e posicionamento dentro da section*/
 .texto {
     display: table-cell;
     float: left;
@@ -83,11 +95,13 @@ h1, header {
     text-align: justify;
 }
 
+/*Conteúdo complementar*/
 aside {
     background-color: var(--cor2);
     padding: 20px;
 }
 
+/*Estilo do conteúdo complementar*/
 aside > h3 {
     background-image: linear-gradient(to right, var(--cor0), var(--cor1), var(--cor2));
     padding: 3px;
@@ -95,6 +109,7 @@ aside > h3 {
     border-radius: 4px;
 }
 
+/*Configuração do rodapé*/
 footer {
     background-color: var(--cor4);
     color: white;
@@ -103,9 +118,16 @@ footer {
     margin: auto;
 }
 
+/*Estilo do link*/
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+
 /*Medias queries - para conteúdo responsivo:*/
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 1200px) {
     #supi {
         margin: auto;
         width: 90%;
@@ -127,6 +149,8 @@ footer {
     }
 
     .imagem {
-        float: left;
+        position: relative;
+        margin-left: 30%;
+        margin-right: 30%;
     }
 }
