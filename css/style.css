@@ -127,7 +127,7 @@ a {
 
 /*Medias queries - para conteúdo responsivo:*/
 
-@media screen and (max-width: 1200px) {
+@media (max-width: 1200px) {
     #supi {
         margin: auto;
         width: 90%;
@@ -149,8 +149,7 @@ a {
     }
 
     .imagem {
-        position: relative;
-        margin-left: 30%;
-        margin-right: 30%;
+       width: 97%;
+       text-align: center;
     }
 }
