@@ -40,6 +40,7 @@ h1 {
     background-color: var(--cor4);
     color: white;
     padding: 10px;
+    text-align: center;
 }
 
 #menu ul {
@@ -54,13 +55,21 @@ h1 {
     display: none;
 }
 
+#wrapper {
+    display: flex;
+}
+
 main {
     max-width: 1300px;
     margin: 0px 50px 0px 100px;
 }
 
-#wrapper {
-    display: flex;
+/*Estilo para título nível 2*/
+h2 {
+    background-color: var(--cor1);
+    border-radius: 5px;
+    margin-bottom: 15px;
+    padding: 5px;
 }
 
 aside {
@@ -72,20 +81,7 @@ aside {
     border-radius: 5px;
 }
 
-/*Estilo para título nível 2*/
-h2 {
-    background-color: var(--cor1);
-    border-radius: 5px;
-    padding: 5px;
-}
-
-/*Centralização dos itens dentro título de nível e cabeçalho*/
-h1, header {
-    text-align: center;
-    margin: auto;
-}
-
-#sobre, #conteudo {
+#sobre, .conteudo {
     background-color: var(--cor3);
     max-width: 960px;
     padding: 10px;
@@ -93,16 +89,17 @@ h1, header {
     margin-top: 15px;
 }
 
-#sobre h2 {
-    margin-bottom: 15px;
+.conteudo {
+    display: table;
+    padding: 10px;
 }
 
-#conteudo > div {
+.conteudo div {
     display: flex;
     padding: 5px;
 }
 
-#conteudo div ul {
+.conteudo div ul {
     margin-top: 20px;
     margin-left: 20px;
 }
@@ -125,14 +122,6 @@ img {
 #supi, #dubov, #fischer {
     padding: 10px;
     max-width: 960px;
-}
-
-/*Estilo do conteúdo dentro das sections*/
-.conteudo {
-    display: table;
-    background-color: var(--cor3);
-    padding: 14px;
-    border-radius: 5px;
 }
 
 /*Posicionamento das imagens a direita do texto*/
