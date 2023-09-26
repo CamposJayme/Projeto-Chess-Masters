@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+/*Medias queries - para conteúdo responsivo:*/
+
+@media (max-width: 1200px) {
+    #supi {
+        margin: auto;
+        width: 90%;
+    }
+
+    #dubov {
+        margin: auto;
+        width: 90%;
+    }
+
+    #fischer {
+        margin: auto;
+        width: 90%;
+    }
+
+    .texto {
+        margin: auto;
+        width: 100%;
+    }
+
+    .imagem {
+       width: 97%;
+       text-align: center;
+    }
+}
+
+@media (max-width: 499px) {
+    #menu-hamburger {
+        display: block;
+    }
+
+    #menu ul {
+        display: none;
+    }
+}
