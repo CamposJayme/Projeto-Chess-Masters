@@ -56,7 +56,20 @@ h1 {
 
 main {
     max-width: 1300px;
-    margin: auto;
+    margin: 0px 50px 0px 100px;
+}
+
+#wrapper {
+    display: flex;
+}
+
+aside {
+    background-color: var(--cor2);
+    margin-top: 15px;
+    width: 250px;
+    height: 100vh;
+    padding: 10px;
+    border-radius: 5px;
 }
 
 /*Estilo para título nível 2*/
@@ -139,20 +152,6 @@ img {
     text-align: left    ;
 }
 
-/*Conteúdo complementar*/
-aside {
-    background-color: var(--cor2);
-    padding: 20px;
-}
-
-/*Estilo do conteúdo complementar*/
-aside > h3 {
-    background-image: linear-gradient(to right, var(--cor0), var(--cor1), var(--cor2));
-    padding: 3px;
-    color: white;
-    border-radius: 4px;
-}
-
 /*Configuração do rodapé*/
 footer {
     background-color: var(--cor4);
@@ -167,43 +166,4 @@ a {
     text-decoration: none;
     font-weight: bold;
     color: white;
-}
-
-/*Medias queries - para conteúdo responsivo:*/
-
-@media (max-width: 1200px) {
-    #supi {
-        margin: auto;
-        width: 90%;
-    }
-
-    #dubov {
-        margin: auto;
-        width: 90%;
-    }
-
-    #fischer {
-        margin: auto;
-        width: 90%;
-    }
-
-    .texto {
-        margin: auto;
-        width: 100%;
-    }
-
-    .imagem {
-       width: 97%;
-       text-align: center;
-    }
-}
-
-@media (max-width: 499px) {
-    #menu-hamburger {
-        display: block;
-    }
-
-    #menu ul {
-        display: none;
-    }
 }
