@@ -1,2 +1,4 @@
 # Projeto-Chess-Masters
-Site com uma breve história sobre meus três jogadores favoritos de Xadrez.
+Site em atualização... Novidades em breve!
+
+
