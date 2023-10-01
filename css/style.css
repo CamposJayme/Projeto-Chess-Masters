@@ -72,6 +72,12 @@ h2 {
     padding: 5px;
 }
 
+img {
+    margin: 10px;
+    width: 280px;
+    border-radius: 50%;
+}
+
 aside {
     background-color: var(--cor2);
     margin-top: 15px;
@@ -87,27 +93,16 @@ aside {
     padding: 10px;
     border-radius: 5px;
     margin-top: 15px;
-}
-
-.conteudo {
-    display: table;
-    padding: 10px;
+    line-height: 1.4rem;
 }
 
 .conteudo div {
     display: flex;
-    padding: 5px;
+    align-items: center;
 }
 
 .conteudo div ul {
-    margin-top: 20px;
     margin-left: 20px;
-}
-
-img {
-    margin: 10px;
-    width: 280px;
-    border-radius: 50%;
 }
 
 /*Configuração de posição e dimensão das bandeiras*/
@@ -116,29 +111,6 @@ img {
     width: 30px;
     margin: -8px;
     margin-left: 5px;
-}
-
-/*Configuração das sections onde cada uma contém um conteúdo*/
-#supi, #dubov, #fischer {
-    padding: 10px;
-    max-width: 960px;
-}
-
-/*Posicionamento das imagens a direita do texto*/
-.imagem {
-    display: table-cell;
-    float: right;
-}
-
-/*Configuração do texto e posicionamento dentro da section*/
-.texto {
-    display: table-cell;
-    float: left;
-    width: 650px;
-    max-width: 100%;
-    margin-top: 10px;
-    margin-right: 20px;
-    text-align: left    ;
 }
 
 /*Configuração do rodapé*/
