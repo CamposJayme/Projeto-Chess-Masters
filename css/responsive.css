@@ -2,30 +2,23 @@
 
 /*Medias queries - para conteúdo responsivo:*/
 
-@media (max-width: 1200px) {
-    #supi {
-        margin: auto;
-        width: 90%;
+@media (max-width: 640px) {
+    aside {
+        display: none;
     }
 
-    #dubov {
+    main {
         margin: auto;
-        width: 90%;
     }
 
-    #fischer {
-        margin: auto;
-        width: 90%;
+    .conteudo div {
+        display: flex;
+        flex-direction: column;
     }
 
-    .texto {
-        margin: auto;
-        width: 100%;
-    }
-
-    .imagem {
-       width: 97%;
-       text-align: center;
+    .conteudo h3 {
+        text-align: center;
+        margin: 15px 0px;
     }
 }
 
