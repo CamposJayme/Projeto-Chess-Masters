@@ -2,6 +2,30 @@
 
 /*Medias queries - para conteúdo responsivo:*/
 
+@media (min-width: 981px) and (max-width: 1400px){
+    main {
+        margin: 0px 10px 0px 10px;
+        min-width: 500px;
+        max-width: 1000px;
+    }
+
+    aside {
+        margin-right: 10px;
+    }
+}
+
+@media (min-width: 641px) and (max-width: 980px) {
+    .conteudo div {
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+    }
+
+    aside {
+        display: none;
+    }
+}
+
 @media (max-width: 640px) {
     aside {
         display: none;
