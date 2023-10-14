@@ -49,6 +49,7 @@
 @media (max-width: 499px) {
     #menu-hamburger {
         display: block;
+        text-align: center;
     }
 
     #menu ul {
