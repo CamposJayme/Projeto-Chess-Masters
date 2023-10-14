@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+a[href^="#"]::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: width .5s;
+}
+
+a[href^="#"]:hover::after {
+    width: 100%;
+    transition: width .5s;
+}
