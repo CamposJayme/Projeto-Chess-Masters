@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-a[href^="#"]::after {
+.ativo::after {
     content: '';
     display: block;
     width: 0;
@@ -9,7 +9,7 @@ a[href^="#"]::after {
     transition: width .5s;
 }
 
-a[href^="#"]:hover::after {
+.ativo:hover::after {
     width: 100%;
     transition: width .5s;
 }
