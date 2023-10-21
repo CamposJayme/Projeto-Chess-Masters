@@ -4,7 +4,6 @@
 * {
     margin: 0;
     padding: 0;
-    list-style-type: none;
 }
 
 /*Variáveis*/
@@ -44,6 +43,7 @@ h1 {
 }
 
 #menu ul {
+    list-style-type: none;
     display: flex;
     gap: 3.5rem;
     justify-content: center;
@@ -76,6 +76,7 @@ img {
     margin: 10px;
     width: 280px;
     border-radius: 50%;
+    cursor: pointer;
 }
 
 aside {
@@ -87,6 +88,9 @@ aside {
     border-radius: 5px;
 }
 
+aside div ol {
+    list-style-position: inside;
+}
 
 #sobre, .conteudo {
     background-color: var(--cor3);
