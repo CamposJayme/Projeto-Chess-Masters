@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-.ativo::after {
+#menu ul li::after {
     content: '';
     display: block;
     width: 0;
@@ -9,14 +9,13 @@
     transition: width .5s;
 }
 
-.ativo:hover::after {
+#menu ul li:hover::after {
     width: 100%;
     transition: width .5s;
 }
 
 .conteudo p {
     display: none;
-
 }
 
 .texto p {
