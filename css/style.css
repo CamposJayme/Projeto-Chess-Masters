@@ -11,7 +11,7 @@
     --cor0: #012323;
     --cor1: #4A7371;
     --cor2: #7FA6A2;
-    --cor3: #c6d6d5b7;
+    --cor3: #c6d6d59c;
     --cor4: #0F0E0C;
 
     --fonte-padrao: Arial, Helvetica, sans-serif;
@@ -20,23 +20,34 @@
 /*Corpo*/
 body {
     font-family: var(--fonte-padrao);
-    background-image: url(../imagens/background-chess.jpg);
+    background-image: url(../imagens/chess-bg.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center bottom;
 }
 
 /*Cabeçalho*/
 header {
-    background-color: var(--cor4);
+    background-color: var(--cor3);
     color: white;
-    padding: 15px; 
+    padding: 10px; 
     margin: auto; 
 }
 
+/*Logo*/
+#logo {
+    margin: 0 auto;
+    max-width: 200px;
+    max-height: 160px;
+}
+
+#logo img {
+    max-width: 100%;
+    margin-top: -15px;
+}
 /*Estilo para título nível 1*/
 h1 {
-    background-color: var(--cor4);
     color: white;
     padding: 10px;
     text-align: center;
@@ -57,11 +68,13 @@ h1 {
 
 #wrapper {
     display: flex;
+    margin: auto;
+    max-width: 1300px;
 }
 
 main {
     max-width: 1300px;
-    margin: 0px 25px 0px 100px;
+    margin: auto;
 }
 
 /*Estilo para título nível 2*/
@@ -72,16 +85,10 @@ h2 {
     padding: 5px;
 }
 
-img {
-    margin: 10px;
-    width: 280px;
-    border-radius: 50%;
-    cursor: pointer;
-}
-
 aside {
-    background-color: var(--cor2);
+    background-color: var(--cor3);
     margin-top: 15px;
+    margin-left: 15px;
     width: 300px;
     height: 765px;
     padding: 10px;
@@ -92,7 +99,7 @@ aside div ol {
     list-style-position: inside;
 }
 
-#sobre, .conteudo {
+#sobre, #favoritos, #contato, .conteudo {
     background-color: var(--cor3);
     max-width: 960px;
     padding: 10px;
@@ -106,16 +113,23 @@ aside div ol {
     align-items: center;
 }
 
+.conteudo div img {
+    cursor: pointer;
+    margin: 10px;
+    width: 280px;
+    border-radius: 50%;
+}
+
 .conteudo div ul {
     margin-left: 20px;
 }
 
 /*Configuração de posição e dimensão das bandeiras*/
 #brasil, #russia, #eua {
-    height: 30px;
+    height: 25px;
     width: 30px;
-    margin: -8px;
     margin-left: 5px;
+    margin-bottom: -5px;
 }
 
 /*Configuração do rodapé*/
