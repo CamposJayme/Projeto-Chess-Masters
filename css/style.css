@@ -15,6 +15,7 @@
     --cor4: #0F0E0C;
 
     --fonte-padrao: Arial, Helvetica, sans-serif;
+    font-weight: bold;
 }
 
 /*Corpo*/
@@ -29,7 +30,7 @@ body {
 
 /*Cabeçalho*/
 header {
-    background-color: var(--cor3);
+    background-color: #00000087;
     color: white;
     padding: 10px; 
     margin: auto; 
