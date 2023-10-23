@@ -46,13 +46,14 @@
     }
 }
 
-@media (max-width: 499px) {
+@media (max-width: 485px) {   
+    #menu ul {
+        display: none;
+    }
+    
     #menu-hamburger {
         display: block;
         text-align: center;
-    }
-
-    #menu ul {
-        display: none;
+        cursor: pointer;
     }
 }
