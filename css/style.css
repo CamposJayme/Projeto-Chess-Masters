@@ -99,6 +99,16 @@ aside div ol {
     list-style-position: inside;
 }
 
+#link-topo {
+    text-decoration: none;
+    background-color: #0F0E0C;
+    padding: 20px;
+    border-radius: 50%;
+    position: fixed;
+    right: 20px;
+    bottom: 35px;
+}
+
 #sobre, #favoritos, #contato, .conteudo {
     background-color: var(--cor3);
     max-width: 960px;
