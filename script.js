@@ -1,6 +1,7 @@
 const sectionMenu = document.querySelectorAll('.conteudo div img')
 const section = document.querySelectorAll('.conteudo')
 
+//Navegação por tabs para conteúdos sobre jogadores
 function activeContent() {
     if (sectionMenu.length && section.length) {
         function activeTab(index) {
@@ -18,6 +19,7 @@ function activeContent() {
 }
 activeContent()
 
+//Scroll suave ao selecionar uma das opções do menu
 function initScroll() {
 
     const linkInternos = document.querySelectorAll('#menu a[href^="#"]')
